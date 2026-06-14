@@ -2,6 +2,8 @@
 
 > A structured learning and reference system for Machine Learning, Deep Learning, LLM Engineering, and AI Research. Not just experiments — a curriculum you can navigate from beginner to expert.
 
+> **Note:** This repository was created using the structure from [ai-self-hosted-hw](https://github.com/MarceloSerra/ai-self-hosted-hw), powered by **Unsloth/Qwen3.6 27B Q2_K_XL**. The same self-hosted approach that builds AI systems also built this encyclopedia — meta, right?
+
 ## What This Repository Is
 
 Every directory in this repository teaches you:
