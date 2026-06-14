@@ -1,0 +1,177 @@
+# AI Research Lab — Your Personal AI Encyclopedia & Laboratory
+
+> A structured learning and reference system for Machine Learning, Deep Learning, LLM Engineering, and AI Research. Not just experiments — a curriculum you can navigate from beginner to expert.
+
+## What This Repository Is
+
+Every directory in this repository teaches you:
+
+1. **What this field is** — Clear definitions
+2. **What problems it solves** — Practical value
+3. **When to use it** — Decision guidance
+4. **When NOT to use it** — Common mistakes and anti-patterns
+5. **Real-world examples** — Industry applications
+6. **Practical projects** — Hands-on experiments
+7. **Relationships with other fields** — How topics connect
+
+Look at a problem, identify the technique, find the path.
+
+---
+
+## Problem → Technique Decision Tree
+
+| I have this kind of problem... | Start here | Then explore |
+|-------------------------------|------------|--------------|
+| Categorizing emails, spam detection | [Classification](classical_ml/classification/README.md) | [NLP Text Classification](nlp/text-classification/README.md) |
+| Predicting prices, sales, trends | [Regression](classical_ml/regression/README.md) | Deep Learning for complex patterns |
+| Finding similar products/documents | [Vector Search](embeddings/vector-search/README.md) | [Semantic Search](embeddings/semantic-search/README.md) |
+| Building a chatbot with company knowledge | [RAG](llm/rag/README.md) | [Embeddings RAG Experiments](embeddings/rag-experiments/README.md) |
+| Recognizing objects in images | [Object Detection](computer_vision/object-detection/README.md) | CNNs, semantic segmentation |
+| Customizing an LLM for my domain | [Instruction Tuning](fine_tuning/instruction-tuning/README.md) | LoRA, QLoRA |
+| Grouping customers, discovering patterns | [Clustering](classical_ml/clustering-unsupervised/README.md) | [Embedding Clustering](embeddings/clustering/README.md) |
+| Understanding text sentiment | [Sentiment Analysis](nlp/sentiment-analysis/README.md) | LLM-based analysis |
+| Translating between languages | [Machine Translation](nlp/machine-translation/README.md) | Transformer architectures |
+| Building autonomous AI agents | [LLM Agents](llm/agents/README.md) | Tool calling, evaluation |
+
+---
+
+## Repository Structure
+
+```mermaid
+graph TD
+    ROOT[ML Playground] --> CLASSICAL[Classical ML]
+    ROOT --> DL[Deep Learning]
+    ROOT --> EMBEDDINGS[Embeddings]
+    ROOT --> NLP[NLP]
+    ROOT --> CV[Computer Vision]
+    ROOT --> LLM[LLM Engineering]
+    ROOT --> FT[Fine Tuning]
+    ROOT --> RESEARCH[Research]
+
+    CLASSICAL --> C1[Regression]
+    CLASSICAL --> C2[Classification]
+    CLASSICAL --> C3[Clustering]
+    CLASSICAL --> C4[Feature Engineering]
+    CLASSICAL --> C5[Model Selection]
+
+    DL --> D1[Neural Network From Scratch]
+    DL --> D2[Backpropagation]
+    DL --> D3[CNN]
+    DL --> D4[RNN]
+    DL --> D5[Transformer]
+
+    EMBEDDINGS --> E1[Vector Search]
+    EMBEDDINGS --> E2[Semantic Search]
+    EMBEDDINGS --> E3[Clustering]
+    EMBEDDINGS --> E4[RAG Experiments]
+
+    NLP --> N1[Text Classification]
+    NLP --> N2[NER]
+    NLP --> N3[Machine Translation]
+    NLP --> N4[Sentiment Analysis]
+
+    CV --> V1[Image Classification]
+    CV --> V2[Object Detection]
+    CV --> V3[Semantic Segmentation]
+    CV --> V4[Data Augmentation]
+
+    LLM --> L1[Prompt Engineering]
+    LLM --> L2[RAG]
+    LLM --> L3[Agents]
+    LLM --> L4[Tool Calling]
+    LLM --> L5[Evaluation]
+
+    FT --> F1[LoRA]
+    FT --> F2[QLoRA]
+    FT --> F3[Instruction Tuning]
+    FT --> F4[Synthetic Datasets]
+
+    DL --> EMBEDDINGS
+    EMBEDDINGS --> LLM
+    CLASSICAL --> DL
+```
+
+---
+
+## Learning Roadmap
+
+```mermaid
+flowchart LR
+    A[Phase 1: Foundations\nClassical ML Basics] --> B[Phase 2: Data Representation\nEmbeddings & Features]
+    B --> C[Phase 3: Deep Learning Fundamentals\nNeural Networks & Backpropagation]
+    C --> D[Phase 4: Specialized DL\nCNNs, RNNs, Transformers]
+    D --> E[Phase 5: NLP\nText Processing]
+    D --> F[Phase 6: Computer Vision\nImage Understanding]
+    E --> G[Phase 7: LLM Engineering\nPrompts, RAG, Agents]
+    F --> G
+    G --> H[Phase 8: Fine-Tuning\nLoRA, QLoRA, Instruction Tuning]
+    H --> I[Phase 9: Research & Advanced Topics]
+
+    style A fill:#e1f5e1,stroke:#2e7d32
+    style B fill:#e1f0f5,stroke:#1565c0
+    style C fill:#fff3e0,stroke:#e65100
+    style D fill:#fce4ec,stroke:#c62828
+    style E fill:#f3e5f5,stroke:#7b1fa2
+    style F fill:#e8f5e9,stroke:#388e3c
+    style G fill:#fff8e1,stroke:#f57f17
+    style H fill:#e0f2f1,stroke:#00695c
+    style I fill:#fafafa,stroke:#424242
+```
+
+### Phase Details
+
+| Phase | Topics | Prerequisites | Estimated Time |
+|-------|--------|---------------|----------------|
+| **1. Foundations** | Regression, Classification, Clustering, Feature Engineering, Model Selection | Python basics | 2-3 weeks |
+| **2. Data Representation** | Embeddings, Vector Search, Semantic Search | Phase 1 | 1-2 weeks |
+| **3. DL Fundamentals** | Neural Networks from Scratch, Backpropagation | Phase 1, 2 | 2-4 weeks |
+| **4. Specialized DL** | CNNs, RNNs, Transformers | Phase 3 | 3-4 weeks |
+| **5. NLP** | Text Classification, NER, Translation, Sentiment | Phase 2, 4 | 2-3 weeks |
+| **6. Computer Vision** | Image Classification, Object Detection, Segmentation | Phase 4 | 2-3 weeks |
+| **7. LLM Engineering** | Prompt Engineering, RAG, Agents, Tool Calling, Evaluation | Phase 2, 4 | 3-4 weeks |
+| **8. Fine-Tuning** | LoRA, QLoRA, Instruction Tuning, Synthetic Datasets | Phase 7 | 2-3 weeks |
+| **9. Research** | Project templates, experiments, reports | All phases | Ongoing |
+
+---
+
+## Quick Navigation
+
+### Core Disciplines
+- [Classical ML](classical_ml/README.md) — The foundation everything builds on
+- [Deep Learning](deep_learning/README.md) — Neural networks that power modern AI
+- [Embeddings](embeddings/README.md) — Dense vectors: the connective tissue of AI
+- [NLP](nlp/README.md) — Language understanding and generation
+- [Computer Vision](computer_vision/README.md) — Teaching machines to see
+- [LLM Engineering](llm/README.md) — Building with large language models
+- [Fine Tuning](fine_tuning/README.md) — Customizing models for your domain
+
+### Supporting Infrastructure
+- [Datasets](datasets/README.md) — Data collection and management
+- [Notebooks](notebooks/README.md) — Interactive exploration
+- [Experiments](experiments/README.md) — Structured experimentation
+- [Reports](reports/README.md) — Results documentation
+- [Tools](tools/README.md) — Utilities and helpers
+- [Research](research/README.md) — Project templates and advanced work
+
+### Documentation
+- [Learning Roadmap](docs/learning-roadmap.md) — Progressive learning path
+- [Architecture](docs/architecture.md) — Repository design decisions
+- [Git Conventions](docs/git-conventions.md) — Commit and branch standards
+
+---
+
+## How to Use This Repository
+
+1. **Identify your problem** — Use the decision tree above
+2. **Navigate to the relevant section** — Follow links from this README
+3. **Read the README** — Understand what, why, when, and when not
+4. **Try a practical project** — Each section includes hands-on experiments
+5. **Document your results** — Use [Reports](reports/README.md) and [Experiments](experiments/README.md)
+
+---
+
+## Difficulty Levels
+
+- 🟢 **Beginner** — Start here, foundational concepts
+- 🟡 **Intermediate** — Requires understanding of prerequisites
+- 🔴 **Advanced** — Deep technical knowledge required

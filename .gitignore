@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+.eggs/
+*.egg-info/
+dist/
+build/
+wheels/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & Models (large files)
+*.parquet
+*.feather
+*.arrow
+*.model
+*.h5
+*.pkl
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Vector databases
+*.chroma/
+*.weaviate/
+*.pinecone/
+
+# Environment
+.env
+.env.*.local
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (if needed)
+node_modules/
